@@ -3,5 +3,8 @@
 
 <a href="https://codeclimate.com/github/foxyfable/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/299c2a241a5d3b5e9cae/maintainability" /></a>
 
-asciinema:
-https://asciinema.org/connect/90fa5aea-3eb2-42bc-916b-d260918a0a26
+asciinema brain-even:
+https://asciinema.org/a/Am3g2MeNzbxscSaCqVbH0BUBE
+
+asciinema brain-calc:
+https://asciinema.org/a/umocinGNjgcHxZAXP8JIfevfv
