@@ -3,8 +3,8 @@
 
 <a href="https://codeclimate.com/github/foxyfable/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/299c2a241a5d3b5e9cae/maintainability" /></a>
 
-asciinema brain-even:
-https://asciinema.org/a/Am3g2MeNzbxscSaCqVbH0BUBE
+<a href ="https://asciinema.org/a/Am3g2MeNzbxscSaCqVbH0BUBE">asciinema brain-even</a>
 
-asciinema brain-calc:
-https://asciinema.org/a/umocinGNjgcHxZAXP8JIfevfv
+<a href ="https://asciinema.org/a/oxKF7RceF471MGu7SUOg9pj7c">asciinema brain-calc</a>
+
+<a href ="https://asciinema.org/a/I33WtQr8t04sw6KveydF5qQdQ">asciinema brain-gcd</a>
