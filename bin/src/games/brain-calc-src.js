@@ -1,4 +1,3 @@
-import readlineSync from 'readline-sync';
 import { greetPlayer, askQuestion, checkAnswer } from '../index.js';
 
 const playBrainCalc = () => {
@@ -11,9 +10,9 @@ const playBrainCalc = () => {
 
   do {
     const sign = equationSigns[Math.floor(Math.random() * equationSigns.length)];
-    const num_1 = Math.floor(Math.random() * 1000);
-    const num_2 = Math.floor(Math.random() * 1000);
-    const equation = `${num_1} ${sign} ${num_2}`;
+    const firstNum = Math.floor(Math.random() * 1000);
+    const secondNum = Math.floor(Math.random() * 1000);
+    const equation = `${firstNum} ${sign} ${secondNum}`;
     const answer = askQuestion(equation);
 
     // assigning correct answer

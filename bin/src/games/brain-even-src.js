@@ -1,4 +1,3 @@
-import readlineSync from 'readline-sync';
 import { greetPlayer, askQuestion, checkAnswer } from '../index.js';
 
 const playBrainEven = () => {

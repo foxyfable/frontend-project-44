@@ -13,7 +13,7 @@
     "brain-calc": "bin/brain-calc.js",
     "brain-gcd": "bin/brain-gcd.js"
   },
-  "author": "",
+  "author": "foxyfable",
   "license": "ISC",
   "dependencies": {
     "eslint-plugin-jest": "^27.6.0",

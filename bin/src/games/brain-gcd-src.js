@@ -1,4 +1,3 @@
-import readlineSync from 'readline-sync';
 import { greetPlayer, askQuestion, checkAnswer } from '../index.js';
 
 const playBrainGcd = () => {
@@ -9,23 +8,23 @@ const playBrainGcd = () => {
   let counter = 0;
 
   do {
-    const num_1 = Math.floor(Math.random() * 1000);
-    const num_2 = Math.floor(Math.random() * 1000);
-    const equation = `${num_1} ${num_2}`;
+    const firstNum = Math.floor(Math.random() * 1000);
+    const secondNum = Math.floor(Math.random() * 1000);
+    const equation = `${firstNum} ${secondNum}`;
     const answer = askQuestion(equation);
 
     // assigning correct answer
     let correctAnswer = 0;
-    
-    const gcd = (num_1, num_2) => {
-      if (num_2 !== 0) {
-        const remainder = num_1 % num_2;
-        return gcd(num_2, remainder);
+
+    const gcd = (x, y) => {
+      if (y !== 0) {
+        const remainder = x % y;
+        return gcd(y, remainder);
       }
-      return num_1;
+      return x;
     };
 
-    correctAnswer = `${gcd(num_1, num_2)}`;
+    correctAnswer = `${gcd(firstNum, secondNum)}`;
 
     const worngAnswerMessage = `'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.
 Let's try again, ${playerName}!`;
