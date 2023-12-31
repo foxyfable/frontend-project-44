@@ -3,7 +3,7 @@ import { greetPlayer, getRandomNumber, askQuestion, checkAnswer } from '../index
 const playBrainProgression = () => {
   const playerName = greetPlayer();
 
-  console.log('Find the greatest common divisor of given numbers.'); // rules
+  console.log('What number is missing in the progression?'); // rules
 
   let counter = 0;
 
