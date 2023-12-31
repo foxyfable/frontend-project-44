@@ -36,7 +36,6 @@ Let's try again, ${playerName}!`;
     if (currentCounter === null) {
       return;
     }
-
     counter = currentCounter;
   } while (counter < 3);
 
