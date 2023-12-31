@@ -2,7 +2,7 @@ import readlineSync from 'readline-sync';
 
 export const greetPlayer = () => {
   console.log('Welcome to the Brain Games!');
-  const playerName = readlineSync.question('May I have your name? '); // get name
+  const playerName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${playerName}!`);
   return playerName;
 };
@@ -14,7 +14,7 @@ export const getRandomNumber = (max) => {
 
 export const askQuestion = (question) => {
   console.log(`Question: ${question}`);
-  const answer = readlineSync.question('Your answer: '); // get answer
+  const answer = readlineSync.question('Your answer: ');
   return answer;
 };
 
