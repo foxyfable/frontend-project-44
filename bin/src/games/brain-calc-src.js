@@ -21,7 +21,16 @@ const playBrainCalc = () => {
     const answer = askQuestion(equation);
 
     // assigning correct answer
-    const correctAnswer = `${eval(equation)}`;
+    let correctAnswer = 0;
+    if (sign === '+') {
+      correctAnswer = firstNum + secondNum;
+    } else if (sign === '-') {
+      correctAnswer = firstNum - secondNum;
+    } else if (sign === '*') {
+      correctAnswer = firstNum * secondNum;
+    }
+
+    correctAnswer = correctAnswer.toString();
 
     const worngAnswerMessage = `'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.
 Let's try again, ${playerName}!`;
