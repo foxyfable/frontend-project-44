@@ -1,4 +1,9 @@
-import { greetPlayer, getRandomNumber, askQuestion, checkAnswer } from '../index.js';
+import {
+  greetPlayer,
+  getRandomNumber,
+  askQuestion,
+  checkAnswer,
+} from '../index.js';
 
 const playBrainPrime = () => {
   const playerName = greetPlayer();
@@ -14,16 +19,16 @@ const playBrainPrime = () => {
     const answer = askQuestion(number);
 
     const isPrime = (n) => {
-        for(let i = 2, x = Math.sqrt(n); i <= x; i++) {
-            if(n % i === 0) return false;
-        }
-        return n !== 1 && n !== 0;
-    }
+      for (let i = 2, x = Math.sqrt(n); i <= x; i += 1) {
+        if (n % i === 0) return false;
+      }
+      return n !== 1 && n !== 0;
+    };
 
     if (isPrime(number) === true) {
-        correctAnswer = 'yes'
+      correctAnswer = 'yes';
     } else if (isPrime(number) === false) {
-        correctAnswer = 'no';
+      correctAnswer = 'no';
     }
 
     const worngAnswerMessage = `'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.

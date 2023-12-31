@@ -1,4 +1,9 @@
-import { greetPlayer, getRandomNumber, askQuestion, checkAnswer } from '../index.js';
+import {
+  greetPlayer,
+  getRandomNumber,
+  askQuestion,
+  checkAnswer,
+} from '../index.js';
 
 const playBrainGcd = () => {
   const playerName = greetPlayer();
@@ -8,7 +13,7 @@ const playBrainGcd = () => {
   let counter = 0;
 
   do {
-    const firstNum =  getRandomNumber(1000);
+    const firstNum = getRandomNumber(1000);
     const secondNum = getRandomNumber(1000);
     const equation = `${firstNum} ${secondNum}`;
     const answer = askQuestion(equation);

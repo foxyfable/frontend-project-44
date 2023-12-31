@@ -1,4 +1,9 @@
-import { greetPlayer, getRandomNumber, askQuestion, checkAnswer } from '../index.js';
+import {
+  greetPlayer,
+  getRandomNumber,
+  askQuestion,
+  checkAnswer,
+} from '../index.js';
 
 const playBrainProgression = () => {
   const playerName = greetPlayer();
@@ -14,8 +19,8 @@ const playBrainProgression = () => {
     const progression = [firstNum];
 
     for (let i = 1; i < 10; i += 1) {
-        const nextElement = progression[i - 1] + progressionScale;
-        progression.push(nextElement);
+      const nextElement = progression[i - 1] + progressionScale;
+      progression.push(nextElement);
     }
 
     const correctAnswer = `${progression[randomIndex]}`;

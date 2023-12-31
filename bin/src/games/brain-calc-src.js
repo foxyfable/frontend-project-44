@@ -1,4 +1,9 @@
-import { greetPlayer, getRandomNumber, askQuestion, checkAnswer } from '../index.js';
+import {
+  greetPlayer,
+  getRandomNumber,
+  askQuestion,
+  checkAnswer,
+} from '../index.js';
 
 const playBrainCalc = () => {
   const playerName = greetPlayer();

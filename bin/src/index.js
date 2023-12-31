@@ -8,7 +8,8 @@ export const greetPlayer = () => {
 };
 
 export const getRandomNumber = (max) => {
-  return Math.floor(Math.random() * max)
+  const randomNumber = Math.floor(Math.random() * max);
+  return randomNumber;
 };
 
 export const askQuestion = (question) => {
