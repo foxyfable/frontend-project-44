@@ -22,8 +22,9 @@ const playBrainPrime = () => {
 
     if (isPrime(number) === true) {
         correctAnswer = 'yes'
+    } else if (isPrime(number) === false) {
+        correctAnswer = 'no';
     }
-    correctAnswer = 'no';
 
     const worngAnswerMessage = `'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.
 Let's try again, ${playerName}!`;
