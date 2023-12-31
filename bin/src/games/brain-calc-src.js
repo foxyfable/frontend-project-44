@@ -1,4 +1,4 @@
-import { greetPlayer, askQuestion, checkAnswer } from '../index.js';
+import { greetPlayer, getRandomNumber, askQuestion, checkAnswer } from '../index.js';
 
 const playBrainCalc = () => {
   const playerName = greetPlayer();
@@ -9,9 +9,9 @@ const playBrainCalc = () => {
   const equationSigns = ['*', '+', '-'];
 
   do {
-    const sign = equationSigns[Math.floor(Math.random() * equationSigns.length)];
-    const firstNum = Math.floor(Math.random() * 1000);
-    const secondNum = Math.floor(Math.random() * 1000);
+    const sign = equationSigns[getRandomNumber(equationSigns.length)];
+    const firstNum = getRandomNumber(1000);
+    const secondNum = getRandomNumber(1000);
     const equation = `${firstNum} ${sign} ${secondNum}`;
     const answer = askQuestion(equation);
 

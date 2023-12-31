@@ -1,4 +1,4 @@
-import { greetPlayer, askQuestion, checkAnswer } from '../index.js';
+import { greetPlayer, getRandomNumber, askQuestion, checkAnswer } from '../index.js';
 
 const playBrainEven = () => {
   const playerName = greetPlayer();
@@ -8,7 +8,7 @@ const playBrainEven = () => {
   let counter = 0;
 
   do {
-    const number = Math.floor(Math.random() * 1000);
+    const number = getRandomNumber(1000);
     const answer = askQuestion(number);
 
     // assigning correct answer

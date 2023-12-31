@@ -7,6 +7,10 @@ export const greetPlayer = () => {
   return playerName;
 };
 
+export const getRandomNumber = (max) => {
+  return Math.floor(Math.random() * max)
+};
+
 export const askQuestion = (question) => {
   console.log(`Question: ${question}`);
   const answer = readlineSync.question('Your answer: '); // get answer

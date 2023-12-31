@@ -1,6 +1,6 @@
 import { greetPlayer, getRandomNumber, askQuestion, checkAnswer } from '../index.js';
 
-const playBrainGcd = () => {
+const playBrainProgression = () => {
   const playerName = greetPlayer();
 
   console.log('Find the greatest common divisor of given numbers.'); // rules
@@ -8,23 +8,20 @@ const playBrainGcd = () => {
   let counter = 0;
 
   do {
-    const firstNum =  getRandomNumber(1000);
-    const secondNum = getRandomNumber(1000);
-    const equation = `${firstNum} ${secondNum}`;
-    const answer = askQuestion(equation);
+    const firstNum = getRandomNumber(100);
+    const progressionScale = getRandomNumber(10);
+    const randomIndex = getRandomNumber(10);
+    const progression = [firstNum];
 
-    // assigning correct answer
-    let correctAnswer = 0;
+    for (let i = 1; i < 10; i += 1) {
+        const nextElement = progression[i - 1] + progressionScale;
+        progression.push(nextElement);
+    }
 
-    const gcd = (x, y) => {
-      if (y !== 0) {
-        const remainder = x % y;
-        return gcd(y, remainder);
-      }
-      return x;
-    };
+    const correctAnswer = `${progression[randomIndex]}`;
+    progression[randomIndex] = '..';
 
-    correctAnswer = `${gcd(firstNum, secondNum)}`;
+    const answer = askQuestion(progression.join(' '));
 
     const worngAnswerMessage = `'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.
 Let's try again, ${playerName}!`;
@@ -43,4 +40,4 @@ Let's try again, ${playerName}!`;
   }
 };
 
-export default playBrainGcd;
+export default playBrainProgression;
