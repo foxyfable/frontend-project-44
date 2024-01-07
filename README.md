@@ -3,12 +3,28 @@
 
 <a href="https://codeclimate.com/github/foxyfable/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/299c2a241a5d3b5e9cae/maintainability" /></a>
 
-<a href ="https://asciinema.org/a/Am3g2MeNzbxscSaCqVbH0BUBE">asciinema brain-even</a>
+how to install
+```
 
-<a href ="https://asciinema.org/a/oxKF7RceF471MGu7SUOg9pj7c">asciinema brain-calc</a>
+make install
+```
 
-<a href ="https://asciinema.org/a/I33WtQr8t04sw6KveydF5qQdQ">asciinema brain-gcd</a>
+how to run a game
+```
 
-<a href ="https://asciinema.org/a/DNv1FoxAxJiWAdT3egUe96cDJ">asciinema brain-progression</a>
+brain-calc
+brain-even
+brain-gcd
+brain-prime
+brain-progression
+```
 
-<a href ="https://asciinema.org/a/hO4OIC8jISX0npzmXxXGpvWJi">asciinema brain-prime</a>
+<script async id="asciicast-Am3g2MeNzbxscSaCqVbH0BUBE" src="https://asciinema.org/a/Am3g2MeNzbxscSaCqVbH0BUBE.js"></script>
+
+<script async id="asciicast-oxKF7RceF471MGu7SUOg9pj7c" src="https://asciinema.org/a/oxKF7RceF471MGu7SUOg9pj7c.js"></script>
+
+<script async id="asciicast-I33WtQr8t04sw6KveydF5qQdQ" src="https://asciinema.org/a/I33WtQr8t04sw6KveydF5qQdQ.js"></script>
+
+<script async id="asciicast-DNv1FoxAxJiWAdT3egUe96cDJ" src="https://asciinema.org/a/DNv1FoxAxJiWAdT3egUe96cDJ.js"></script>
+
+<script async id="asciicast-hO4OIC8jISX0npzmXxXGpvWJi" src="https://asciinema.org/a/hO4OIC8jISX0npzmXxXGpvWJi.js"></script>
