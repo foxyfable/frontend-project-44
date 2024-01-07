@@ -5,13 +5,11 @@
 
 how to install
 ```
-
 make install
 ```
 
 how to run a game
 ```
-
 brain-calc
 brain-even
 brain-gcd
