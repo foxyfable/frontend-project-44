@@ -17,12 +17,12 @@ brain-prime
 brain-progression
 ```
 
-<script async id="asciicast-Am3g2MeNzbxscSaCqVbH0BUBE" src="https://asciinema.org/a/Am3g2MeNzbxscSaCqVbH0BUBE.js"></script>
+[![asciicast](https://asciinema.org/a/Am3g2MeNzbxscSaCqVbH0BUBE.svg)](https://asciinema.org/a/Am3g2MeNzbxscSaCqVbH0BUBE)
 
-<script async id="asciicast-oxKF7RceF471MGu7SUOg9pj7c" src="https://asciinema.org/a/oxKF7RceF471MGu7SUOg9pj7c.js"></script>
+[![asciicast](https://asciinema.org/a/oxKF7RceF471MGu7SUOg9pj7c.svg)](https://asciinema.org/a/oxKF7RceF471MGu7SUOg9pj7c)
 
-<script async id="asciicast-I33WtQr8t04sw6KveydF5qQdQ" src="https://asciinema.org/a/I33WtQr8t04sw6KveydF5qQdQ.js"></script>
+[![asciicast](https://asciinema.org/a/I33WtQr8t04sw6KveydF5qQdQ.svg)](https://asciinema.org/a/I33WtQr8t04sw6KveydF5qQdQ)
 
-<script async id="asciicast-DNv1FoxAxJiWAdT3egUe96cDJ" src="https://asciinema.org/a/DNv1FoxAxJiWAdT3egUe96cDJ.js"></script>
+[![asciicast](https://asciinema.org/a/DNv1FoxAxJiWAdT3egUe96cDJ.svg)](https://asciinema.org/a/DNv1FoxAxJiWAdT3egUe96cDJ)
 
-<script async id="asciicast-hO4OIC8jISX0npzmXxXGpvWJi" src="https://asciinema.org/a/hO4OIC8jISX0npzmXxXGpvWJi.js"></script>
+[![asciicast](https://asciinema.org/a/hO4OIC8jISX0npzmXxXGpvWJi.svg)](https://asciinema.org/a/hO4OIC8jISX0npzmXxXGpvWJi)
