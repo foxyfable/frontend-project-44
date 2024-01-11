@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import playBrainGcd from '../src/games/brain-gcd-src.js';
+import playGame from '../src/index.js';
+import { printRules, formData } from '../src/games/brain-gcd-src.js';
 
-playBrainGcd();
+playGame(formData, printRules);

@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import playBrainProgression from '../src/games/brain-progression-src.js';
+import playGame from '../src/index.js';
+import { printRules, formData } from '../src/games/brain-progression-src.js';
 
-playBrainProgression();
+playGame(formData, printRules);

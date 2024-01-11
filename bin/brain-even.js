@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import playBrainEven from '../src/games/brain-even-src.js';
+import playGame from '../src/index.js';
+import { printRules, formData } from '../src/games/brain-even-src.js';
 
-playBrainEven();
+playGame(formData, printRules);
