@@ -1,5 +1,5 @@
 export const printRules = () => {
-  console.log('What number is missing?');
+  console.log('What number is missing in the progression?');
 };
 
 export const formData = () => {
