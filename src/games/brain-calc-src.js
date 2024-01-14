@@ -1,31 +1,35 @@
-export const printRules = () => {
-  console.log('What is the result of the expression?');
-};
+import getNumber from '../utilis.js';
 
-export const formData = () => {
-  const equationSigns = ['*', '+', '-'];
-  const sign = equationSigns[Math.floor(Math.random() * equationSigns.length)];
-  const firstNum = Math.floor(Math.random() * 1000);
-  const secondNum = Math.floor(Math.random() * 1000);
-  const equation = `${firstNum} ${sign} ${secondNum}`;
+export const printRules = 'What is the result of the expression?';
 
-  let correctAnswer = 0;
+const equationSigns = ['*', '+', '-'];
+
+const evaluate = (sign, a, b) => {
+  let result = 0;
 
   switch (sign) {
     case '+':
-      correctAnswer = firstNum + secondNum;
+      result = a + b;
       break;
     case '-':
-      correctAnswer = firstNum - secondNum;
+      result = a - b;
       break;
     case '*':
-      correctAnswer = firstNum * secondNum;
+      result = a * b;
       break;
     default:
       break;
   }
+  return result;
+};
 
-  correctAnswer = correctAnswer.toString();
+export const formData = () => {
+  const sign = equationSigns[getNumber(equationSigns.length)];
+  const firstNum = getNumber(1000);
+  const secondNum = getNumber(1000);
+  const equation = `${firstNum} ${sign} ${secondNum}`;
+
+  const correctAnswer = evaluate(sign, firstNum, secondNum).toString();
 
   return [equation, correctAnswer];
 };

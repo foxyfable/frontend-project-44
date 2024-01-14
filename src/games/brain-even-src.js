@@ -1,17 +1,21 @@
-export const printRules = () => {
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+import getNumber from '../utilis.js';
+
+export const printRules = 'Answer "yes" if the number is even, otherwise answer "no".';
+
+const isEven = (num) => {
+  let result = '';
+
+  if ((num % 2) === 0) {
+    result = 'yes';
+  } else {
+    result = 'no';
+  }
+  return result;
 };
 
 export const formData = () => {
-  const number = Math.floor(Math.random() * 1000);
-
-  let correctAnswer = '';
-
-  if ((number % 2) === 0) {
-    correctAnswer = 'yes';
-  } else {
-    correctAnswer = 'no';
-  }
+  const number = getNumber(1000);
+  const correctAnswer = isEven(number);
 
   return [number, correctAnswer];
 };

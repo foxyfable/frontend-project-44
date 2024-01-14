@@ -5,27 +5,22 @@ const playGame = (formData, printRules) => {
   const playerName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${playerName}!`);
 
-  printRules();
+  console.log(printRules);
 
-  let counter = 0;
-
-  do {
+  for (let i = 0; i < 3; i += 1) {
     const [question, correctAnswer] = formData();
 
     console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
 
-    const worngAnswerMessage = `'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.
-Let's try again, ${playerName}!`;
-
     if (answer === correctAnswer) {
       console.log('Correct!');
-      counter += 1;
     } else {
-      console.log(`${worngAnswerMessage}`);
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.
+Let's try again, ${playerName}!`);
       return;
     }
-  } while (counter < 3);
+  }
 
   console.log(`Congratulations, ${playerName}!`);
 };
