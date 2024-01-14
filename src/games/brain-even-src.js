@@ -2,16 +2,7 @@ import getNumber from '../utilis.js';
 
 export const printRules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const isEven = (num) => {
-  let result = '';
-
-  if ((num % 2) === 0) {
-    result = 'yes';
-  } else {
-    result = 'no';
-  }
-  return result;
-};
+const isEven = (num) => ((num % 2) === 0 ? 'yes' : 'no');
 
 export const formData = () => {
   const number = getNumber(1000);
