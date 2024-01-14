@@ -16,7 +16,7 @@ const isPrime = (n) => {
   } else {
     result = 'no';
   }
-return result;
+  return result;
 };
 
 export const formData = () => {

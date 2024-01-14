@@ -13,8 +13,8 @@ const formProgression = (firstNum, scale, index) => {
   const result = `${progression[index]}`;
   progression[index] = '..';
 
-  return [progression.join(' '), result]
-}
+  return [progression.join(' '), result];
+};
 
 export const formData = () => {
   const firstNum = getNumber(100);

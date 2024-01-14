@@ -8,7 +8,7 @@ const gcd = (x, y) => {
     return gcd(y, remainder);
   }
   return x;
-}; 
+};
 
 export const formData = () => {
   const firstNum = getNumber(1000);
