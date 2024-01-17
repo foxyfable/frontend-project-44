@@ -1,26 +1,21 @@
 import getNumber from '../utilis.js';
 
-export const printRules = 'What is the result of the expression?';
+export const rules = 'What is the result of the expression?';
 
 const equationSigns = ['*', '+', '-'];
 
 const evaluate = (sign, a, b) => {
-  let result = 0;
 
   switch (sign) {
     case '+':
-      result = a + b;
-      break;
+      return a + b;
     case '-':
-      result = a - b;
-      break;
+      return a - b;
     case '*':
-      result = a * b;
-      break;
+      return a * b;
     default:
-      break;
+      throw new Error('Error!');
   }
-  return result;
 };
 
 export const formData = () => {
