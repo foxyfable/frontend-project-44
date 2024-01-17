@@ -5,7 +5,6 @@ export const rules = 'What is the result of the expression?';
 const equationSigns = ['*', '+', '-'];
 
 const evaluate = (sign, a, b) => {
-
   switch (sign) {
     case '+':
       return a + b;
